@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 13</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="navigation" id="navigationsbar">
+            <a href="index.html">Home</a>
+            <a href="pages\page1.html">Page 1</a>
+            <a href="pages\page2.html">Page 2</a>
+            <a href="pages\page3.html">Page 3</a>
+            <a class="icon" onclick="burgerMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+    </nav>
+    <div>Hej hej</div>
+<script>
+    function burgerMenu() {
+        let burger = document.getElementById("navigationsbar");
+        if (burger.className === "navigation") {
+        burger.className += " responsive";
+        } else {
+        burger.className = "navigation";
+        }
+    }
+</script>
+</body>
+</html>
