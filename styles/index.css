@@ -5,11 +5,19 @@ body {
 }
 a {
     font-family: Arial, Helvetica, sans-serif;
-    color: pink;
+    color: white;
+    background-color: pink;
     font-style: bold;
+    font-size: 20px; 
+}
+.hej {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 50px;
 }
 a:hover {
-    color:brown;
+    color: white;
+    background-color: palevioletred; 
 }
 ul {
     display: flex; 
@@ -26,6 +34,9 @@ ul {
     .navigation a.icon {
       float: right;
       display: block;
+      margin-right: 5px;
+      background: none;
+      cursor: pointer; 
     }
   }
   @media screen and (max-width: 600px) {
